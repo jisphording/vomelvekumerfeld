@@ -1,0 +1,66 @@
+title: Newsfeed
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 📚
+
+options:
+  changeStatus: false
+
+status:
+  draft:
+    label: Entwurf
+    text: "Diese Einträge können nur von eingeloggden Autoren im Panel eingesehen werden"
+  unlisted:
+    label: Ungelistet
+    text: "Diese Einträge sind in Abstimmung und können nur über die Eingabe der URL im Browser eingesehen werden."
+  listed:
+    label: Öffentlich
+    text: "Diese Einträge sind online veröffentlicht und können von jedem eingesehen werden."
+
+# sorting
+sortBy: date desc
+num: '{{ page.published.toDate("Ymd") }}'
+
+columns:
+  # main
+  main:
+    width: 1/2
+    sections:
+
+      info:
+        headline: Info
+        type: info
+        text: "Auf dieser Seite können Neuigkeiten angelegt werden. Neuigkeiten, die Bilder erhalten nutzen automatisch das erste Bild als Cover."
+
+      drafts:
+        headline: "Entwürfe"
+        status: draft
+        type: pages
+        text: "{{ page.title }}"
+        info: "{{ page.published.toDate('d.m.Y') }}"
+        templates:
+          - news
+      
+      unlisted:
+        headline: "Ungelistete News"
+        status: unlisted
+        type: pages
+        text: "{{ page.title }}"
+        info: "{{ page.published.toDate('d.m.Y') }}"
+
+  # sidebar
+  sidebar:
+    width: 1/2
+    sections:
+
+      infoside:
+        headline: Info
+        type: info
+        text: "In dieser Spalte werden alle bereits veröffentlichten News angezeigt."
+
+      published:
+        headline: "Veröffentlichte News"
+        status: listed
+        type: pages
+        text: "{{ page.title }}"
+        info: "{{ page.published.toDate('d.m.Y') }}"

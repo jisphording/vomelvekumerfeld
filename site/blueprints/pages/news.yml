@@ -1,0 +1,88 @@
+# This section blueprint defines a pages section that can be reused across multiple blueprints
+# or multiple times within the same blueprint, see `/site/blueprints/pages/notes.yml` and `/site/blueprints/site.yml`
+# Sections can have different layouts and display additional information or a preview image
+# More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
+title: News # The title of the template in the panel selection
+
+# Each page can have an icon that is shown in page listings when no preview image is available.
+icon: 📖
+
+status:
+  draft:
+    label: Entwurf
+    text: "Diese Einträge können nur von eingeloggden Autoren im Panel eingesehen werden"
+  unlisted:
+    label: Ungelistet
+    text: "Diese Einträge sind in Abstimmung und können nur über die Eingabe der URL im Browser eingesehen werden."
+  listed:
+    label: Öffentlich
+    text: "Diese Einträge sind online veröffentlicht und können von jedem eingesehen werden."
+    
+# layout: list
+sortBy: date desc
+
+# Sorting number scheme that is applied when page status is changed to `listed`
+# More about page sorting: https://getkirby.com/docs/reference/panel/blueprints/page#sorting
+num: date
+# num: '{{ page.date.toDate('d.m.Y') }}' # How the page is sorted when displaying
+
+columns:
+  #main
+  main:
+    width: 2/3
+    sections:
+
+      info:
+        headline: Info
+        type: info
+        text: "Auf dieser Seite können Neuigkeiten angelegt werden. Neuigkeiten, die Bilder erhalten nutzen automatisch das erste Bild als Cover."
+
+      content:
+        type: fields
+        fields:
+          # title:
+          #   label: Title
+          #   type: title
+          #   required: true
+          #   width: 3/4
+
+          newsentry:
+            label: "News-Eintrag"
+            type: editor
+            text: "Hier den News-Eintrag einfügen"
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      meta:
+        type: fields
+        fields:
+
+          published:
+            label: Datum
+            type: date
+            display: DD MM YYYY
+            default: today
+            required: true
+
+          author:
+            type: users
+              
+          # Fields types can be added using the shortcut `fieldname: true`
+          # (however, you can only use a fieldname once per page and this only makes sense for simple fields without configuration)
+          tags:
+            label: Tags
+            type: tags
+            options: query
+            query: site.index.pluck("tags", ",", true)
+
+      # a list of files
+      files:
+        type: files
+        headline: Images
+        layout: cards
+      
+
+    

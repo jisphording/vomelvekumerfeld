@@ -1,0 +1,32 @@
+title: Default Subpage
+
+columns:
+  #main
+  main:
+    width: 2/3
+    sections:
+
+      content:
+        type: fields
+        fields:
+          text:
+            label: Text
+            type: editor
+            size: large
+
+  # sidebar
+  sidebar:
+    width: 1/3
+    sections:
+
+      pages: false
+
+      files:
+        type: files
+        headline: Images
+        layout: cards
+
+
+
+
+

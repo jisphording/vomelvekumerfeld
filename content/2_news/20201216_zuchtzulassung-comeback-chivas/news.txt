@@ -1,0 +1,40 @@
+Title: Zuchtzulassung Comeback Chivas
+
+----
+
+Newsentry:
+
+[
+    {
+        "attrs": [],
+        "content": "Wir freuen uns riesig und gratulieren Comeback Chivas vom Elvekumer Feld zur Zuchtzulassung im DRC.",
+        "id": "_YAuY30WNn",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Er steht ab sofort für geeignete Hündinnen zur Verfügung. Wir drücken Inge und Wolfgang für ihr Vorhaben feste die Daumen.",
+        "id": "_iJI6XmXKY",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Wir sind gespannt, wie Comeback Chivas sich vererben wird.",
+        "id": "_no1eZNKhj",
+        "type": "paragraph"
+    }
+]
+
+----
+
+Published: 2020-10-27
+
+----
+
+Author:
+
+- 4VXMzNFa
+
+----
+
+Tags: Deckrüde, Nachwuchs, C-Wurf, Zucht

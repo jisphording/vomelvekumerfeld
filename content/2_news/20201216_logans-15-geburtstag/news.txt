@@ -1,0 +1,46 @@
+Title: Logans 15. Geburtstag
+
+----
+
+Newsentry:
+
+[
+    {
+        "attrs": [],
+        "content": "Heute wäre unser Logan 15 Jahre alt geworden.",
+        "id": "_pqtOkznpB",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Wir hätten dich noch so gerne bei uns und vermissen dich sehr.",
+        "id": "_Ur6jjkTva",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Wir wünschen dir und deinen Geschwistern im Hundehimmel, alle Liebe und Gute zum Geburtstag. Deinem Burder Lard, der sich GsD noch bester Gesundheit erfreut, wünschen wir ganz viele extra Leckerlies und Streicheleinheiten. Bleib noch lange fit und gesund.",
+        "id": "_3PnVEadQi",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Dir lieber Johannes , danke ich für das schöne Bild vom Logan , die Überraschung ist dir gelungen.",
+        "id": "_udfeqnt6t",
+        "type": "paragraph"
+    }
+]
+
+----
+
+Published: 2020-12-10
+
+----
+
+Author:
+
+- 4VXMzNFa
+
+----
+
+Tags: Logan

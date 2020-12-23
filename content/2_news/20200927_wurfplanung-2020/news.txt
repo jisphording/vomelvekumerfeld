@@ -1,0 +1,40 @@
+Title: Wurfplanung 2020
+
+----
+
+Newsentry:
+
+[
+    {
+        "attrs": [],
+        "content": "Unsere Wurfplanung für Amy und Conny im Herbst/Winter 2020 steht.",
+        "id": "_aumy6xk0f",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Wir danken Birgit Rabe für die Zusage und für ihr Vertrauen, das wir Owen du Fort de Bertheaume für unseren E Wurf mit Conny nehmen dürfen. Maike Stapfer danken wir für die Zusage, das wir mit Meiepere Scottish Fiction eine Wurfwiederholung mit Amy machen dürfen.",
+        "id": "_7nlry8v6p",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Wir sind sehr gespannt auf die nächste Zeit und müssen jetzt auf die Läufigkeit warten. Weitere Informationen unter <a href=\"https://www.vomelvekumerfeld.de/zucht/\">Wurfplanung</a>",
+        "id": "_luLW2Yj7Y",
+        "type": "paragraph"
+    }
+]
+
+----
+
+Published: 2020-09-27
+
+----
+
+Author:
+
+- 4VXMzNFa
+
+----
+
+Tags: Zucht, Wurfplanung, D-Wurf, E-Wurf, Amy, Conny

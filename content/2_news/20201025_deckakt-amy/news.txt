@@ -1,0 +1,34 @@
+Title: Deckakt Amy
+
+----
+
+Newsentry:
+
+[
+    {
+        "attrs": [],
+        "content": "Am Freitag und Samstag hatten Amy vom Elvekumer Feld und Meiepere Scottish Fiction (Scotty) ihr Date. Es war ein harmonischer Deckakt, somit sind wir schon gespannt auf den US Termin. Liebe Maike, wir danken dir für dein Vertrauen und deine Gastfreundlichkeit. Jetzt heißt es Daumen drücken.",
+        "id": "_urza4jtbw",
+        "type": "paragraph"
+    },
+    {
+        "attrs": [],
+        "content": "Aufgrund der vielen Welpeninteressenten ist es uns aktuell nicht möglich alle zu informieren. Dafür bitten wir um Verständnis. Sobald wir wissen, dass Amy trächtig ist, werden wir uns melden.",
+        "id": "_PwHXW2wEy",
+        "type": "paragraph"
+    }
+]
+
+----
+
+Published: 2020-10-25
+
+----
+
+Author:
+
+- 4VXMzNFa
+
+----
+
+Tags: Decken, Amy, Nachwuchs, Zucht

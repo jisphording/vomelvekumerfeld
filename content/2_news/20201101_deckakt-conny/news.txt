@@ -1,0 +1,28 @@
+Title: Deckakt Conny
+
+----
+
+Newsentry:
+
+[
+    {
+        "attrs": [],
+        "content": "Am Freitag und Samstag war Conny beim Owen du Fort de Bertheaume. Es war auch hier ein instinktsicherer Deckakt. Jetzt sind wir gespannt auf den US Termin. Wir danken Birgit Rabe für ihr Vertrauen und für ihre Gastfreundlichkeit.&nbsp; Nun gilt es auch hier Daumen drücken .",
+        "id": "_lal2ri71c",
+        "type": "paragraph"
+    }
+]
+
+----
+
+Published: 2020-11-01
+
+----
+
+Author:
+
+- 4VXMzNFa
+
+----
+
+Tags: Rüde, Decken, Zucht

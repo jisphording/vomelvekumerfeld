@@ -20,12 +20,12 @@ columns:
     sections:
 
       pages:
-        label: Unterseiten
+        headline: Unterseiten
         create: subpage
 
       files:
         type: files
-        headline: Images
+        headline: Bilder
         layout: cards
 
 

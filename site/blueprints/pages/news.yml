@@ -23,8 +23,8 @@ sortBy: date desc
 
 # Sorting number scheme that is applied when page status is changed to `listed`
 # More about page sorting: https://getkirby.com/docs/reference/panel/blueprints/page#sorting
-num: date
-# num: '{{ page.date.toDate('d.m.Y') }}' # How the page is sorted when displaying
+#num: date
+num: '{{ page.published.toDate('Ymd') }}' # How the page is sorted when displaying
 
 columns:
   #main

@@ -1,0 +1,7 @@
+/* Add in all template files */
+@use 'templates/default';
+@use 'templates/news';
+
+@use 'templates/colors';
+@use 'templates/webfonts';
+@use 'templates/typography';

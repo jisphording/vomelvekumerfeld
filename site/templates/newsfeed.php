@@ -1,14 +1,13 @@
 <?php snippet('header') ?>
-<?php snippet('menu') ?>
 
 <section class="content blog">
 
     <h1><?= $page->title()->html() ?></h1>
 
     <!-- tagcloud -->
-    <aside>
+    <aside class="tags">
         <h1>News nach Thema filtern</h1>
-        <ul class="tags">
+        <ul>
             <?php foreach($tags as $tag): ?>
             <li>
             <a href="<?= url($page->url(), ['params' => ['tag' => $tag]]) ?>">
@@ -26,9 +25,9 @@
 
         <article>
             <!-- news-entry -->
-            <time datetime="<?= $article->published()->toDate('d.m.Y') ?>" pubdate="pubdate"></time>
+            <time datetime="<?= $article->published()->toDate('d.m.Y') ?>" pubdate="pubdate"><?= $article->published()->toDate('d.m.Y') ?></time>
 
-            <h1><?= $article->published()->toDate('d.m.Y') ?> - <?= $article->title()->html() ?></h1>
+            <h1><?= $article->title()->html() ?></h1>
             <?= $article->newsentry()->blocks() ?>
             <img src="<?= $file->url() ?>" alt="Cover Bild f&uuml;r den Newseintrag" width="<?= floor($file->width()) ?>" height="<?= floor($file->height()) ?>">
 

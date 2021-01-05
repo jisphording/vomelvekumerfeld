@@ -2,9 +2,36 @@
 <?php snippet('header') ?>
 
 <h1><?= $page->title() ?></h1>
-<p><?= $page->Text()->kirbytext() ?></p>
 
-<!-- Get all images from news item -->
-<?php foreach( $page -> images() as $file ): ?>
-    <img src="<?= $file->url() ?>" alt="Cover Bild f&uuml;r den Newseintrag" width="<?= floor($file->width()) ?>" height="<?= floor($file->height()) ?>">
-<?php endforeach ?>
+<!-- List all subpages on page - makes for easier backend management -->
+
+<!-- Main Page Loop -->
+<?= $page->content()->text()->blocks();
+
+// Image Loop
+$images = $page->images();
+foreach ($images as $image):
+    echo $image;
+endforeach; ?>
+
+<!-- Sub Pages Loop -->
+<?php $subpages = $page->children();
+
+foreach ($subpages as $subpage): ?>
+
+    <hr /> <!-- temporary until css is in place -->
+
+    <h1><?= $subpage->content()->title() ?></h1>
+
+    <?= $subpage->content()->text()->blocks();
+
+    // Image Loop
+    $images = $subpage->images();
+    foreach ($images as $image):
+        echo $image;
+    endforeach;
+
+endforeach;
+?>
+
+<!-- List all subpages on page -->

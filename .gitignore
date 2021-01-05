@@ -27,6 +27,10 @@ ffmpeg2pass-0.log
 /video/*
 !/media/index.html
 
+# Do not track font files
+# ---------------
+/assets/fonts/*
+
 # Lock files
 # ---------------
 .lock

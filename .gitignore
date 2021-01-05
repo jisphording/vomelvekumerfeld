@@ -3,11 +3,28 @@
 
 Icon
 .DS_Store
+ffmpeg2pass-0.log
 
-# Temporary files
+# Files meant for development only
 # ---------------
 
+/node_modules/*
+/*lock.json
+/TODO.md
+*.zip
+
+# Data that is only meant for deployment
+# ---------------
+/.cache
+/dist/*
+
+# Do not track Kirby CMS and Media Files in Repository
+# ---------------
+
+/kirby/*
 /media/*
+/assets/img/*
+/video/*
 !/media/index.html
 
 # Lock files

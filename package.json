@@ -1,0 +1,74 @@
+{
+  "name": "vomelvekumerfeld",
+  "version": "1.0.0",
+  "description": "Online Presence of German Golden Retriever Kennel and Breeder 'Vom Elvekumer Feld'",
+  "main": "index.php",
+  "dependencies": {},
+  "pwaManifest": {
+    "name": "Offline Website for Vom Elvekumer Feld",
+    "shortName": "Vom Elvekumer Feld - Offline",
+    "startURL": "../offline/index.html",
+    "scope": "/",
+    "theme": "#d2d3d6",
+    "background_color": "#d2d3d6",
+    "generateIconOptions": {
+      "baseIcon": "./dist/img/emblem-quadrat.svg",
+      "sizes": [
+        96,
+        152,
+        192,
+        384,
+        512
+      ],
+      "genFavicons": true,
+      "purpose": [
+        "maskable"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del-cli dist/*",
+    "build": "npm run clean && npm run build:sass && npm run imagemin && npm run build:parcel && npm run build:sw",
+    "build:sass": "sass assets/css:dist --style compressed",
+    "build:parcel": "parcel build assets/js/script.js -d dist --public-url /dist",
+    "build:sw": "parcel build assets/js/serviceworker.js -d dist --public-url /dist",
+    "build:video": "node utils/ffmpeg.js",
+    "watch": "concurrently --kill-others \"npm run watch:sass\" \"npm run watch:parcel\"",
+    "watch:sass": "sass --watch assets/css:dist",
+    "watch:parcel": "parcel watch assets/js/script.js -d dist /assets",
+    "imagemin": "node utils/imagemin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jisphording/vomelvekumerfeld.git"
+  },
+  "keywords": [
+    "dog",
+    "kennel",
+    "golden retriever",
+    "breeder",
+    "drc",
+    "vdh",
+    "fci"
+  ],
+  "author": "Johannes Isphording",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jisphording/vomelvekumerfeld/issues"
+  },
+  "homepage": "https://vomelvekumerfeld.de",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "del": "^6.0.0",
+    "del-cli": "^3.0.1",
+    "ffmpeg-cli": "^2.7.1",
+    "imagemin": "^7.0.1",
+    "imagemin-keep-folder": "^5.3.2",
+    "imagemin-svgo": "^8.0.0",
+    "imagemin-webp": "^5.1.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
+    "sass": "^1.32.0"
+  }
+}

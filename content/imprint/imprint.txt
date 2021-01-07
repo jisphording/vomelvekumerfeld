@@ -1,0 +1,93 @@
+Title: Imprint & Legal Notice
+----
+Intro: Impressum, Rechtliches
+----
+Claim: Auch das *Kleingedruckte* ist uns wichtig. 
+
+---- 
+*********************************************************************************************************************
+---- 
+
+PageText: 
+
+## ODR:
+
+Onlineplattform der Europäischen Union für Verbraucherbeschwerdenbeilegung:
+Hiermit laden wir (Vom Elvekumer Feld) Sie ein im Beschwerdefall die Onlineplattform der Europäischen Union für Verbraucherbeschwerdenbeilegungn zu verwenden. Die Plattform kann unter der folgenden Internetadresse erreicht werden: ec.europa.eu/consumers/odr.
+
+Bitte beachten Sie, dass wir nicht verpflichtet und grundsätzlich nicht bereit sind, an einem Streitbeilegungsverfahren von Verbraucherschlichtungsstellen teilzunehmen.
+
+Änderungen Vorbehalten
+
+## Urheberrecht der Inhalte
+
+Sofern nicht anders angegeben, sind alle Inhalte, einschließlich Bilder, Fotografien, Designs, Videos, Illustrationen und schriftlichen Materialien, die als Teil dieser Website (zusammenfassend als „Inhalte“ bezeichnet) erscheinen, Urheberrechte, Marken und / oder andere geistige Eigentumsrechte, die Eigentum von, kontrolliert oder sind lizenziert von Vom Elvekumer Feld und / oder verbundenen Unternehmen. Die gesamte Website ist urheberrechtlich geschützt. Die Urheberrechte liegen bei Vom Elvekumer Feld.
+
+## Verwendund der auf dieser Seite befindlichen Dateien 
+
+Die digitalen Dateien, Bilder, Texte und Grafiken dürfen auf keinen Fall ohne ausdrückliche schriftliche Zustimmung von Vom Elvekumer Feld von dieser Website verwendet, kopiert, angezeigt oder abgerufen werden. Durch das Herunterladen oder Kopieren werden Ihnen keinerlei Rechte, Titel oder Interessen an heruntergeladenen Materialien übertragen. Sie dürfen die Inhalte, die Website oder verwandte Werke weder ganz noch teilweise reproduzieren, veröffentlichen, übertragen, verbreiten, anzeigen, modifizieren, ableiten, verkaufen oder an einem Verkauf oder einer Verwertung in irgendeiner Weise teilnehmen Materialien.
+
+## Verarbeitung personenbezogener Daten
+
+Wir sind für die Verarbeitung personenbezogener Daten im Rahmen unserer Website gemäß den Bestimmungen der Allgemeinen Datenschutzverordnung (DSGVO) verantwortlich.
+
+Mit diesem Datenschutzhinweis möchten wir Sie hiermit über Art, Umfang und Zweck der Verarbeitung Ihrer personenbezogenen Daten informieren (nachfolgend nur „Daten“ genannt).
+
+## Datennutzung, Verarbeitungszwecke und Rechtsgrundlage
+
+Wenn Sie unsere Website besuchen oder Kontakt mit uns aufnehmen (z. B. per E-Mail), werden Ihre Daten von uns verarbeitet. Personenbezogene Daten werden nur zu dem Zweck verwendet und verarbeitet, zu dem Sie uns diese Daten zur Verfügung gestellt haben, beispielsweise zur Einwilligung oder zur Bearbeitung oder Bearbeitung Ihrer Anfrage. Darüber hinaus erfolgt eine Datenverarbeitung, um unsere berechtigten Interessen an der Verbesserung der Stabilität und Funktionalität unserer Website zu schützen.
+
+Die konkreten Gründe für die Verarbeitung der Daten, die betroffenen Daten und die Rechtsgrundlage für die Verarbeitung der Daten sind in der folgenden Liste aufgeführt:
+
+## a) Ihre Website besuchen
+
+Wir zeichnen Ihre Besuche auf unserer Website auf. Wir erheben nur Daten, die Ihr Browser an unseren Server übermittelt (sog. Server Log Files). Dabei werden folgende Daten verarbeitet: Name der jeweils aufgerufenen Website, Datum und Uhrzeit des Zugriffs, Menge der übertragenen Daten, verwendeter Browsertyp und -version, verwendetes Betriebssystem, Referrer URL (die zuvor besuchte Seite), Ihre IP-Adresse (ggf. in anonymisierter Form) und den anfragenden Anbieter. Wir erheben diese Daten aufgrund unserer berechtigten Interessen im Sinne von Artikel 6 Abs. 1 f) der DSGVO.
+
+Die Daten werden nicht weitergegeben oder anderweitig genutzt. Wir behalten uns jedoch das Recht vor, die Server-Protokolldateien nachträglich zu überprüfen, wenn konkrete Hinweise auf eine rechtswidrige Nutzung vorliegen.
+
+## b) Kontaktieren Sie uns
+
+Wenn Sie uns per E-Mail kontaktieren, werden Ihre Daten, z. Name, Vorname, E-Mail-Adresse und Nachricht werden ausschließlich zum Zwecke der Beantwortung Ihrer Anfrage oder der Kontaktaufnahme und der damit verbundenen technischen Administration verarbeitet. Diese Daten werden von uns nur mit Ihrer Einwilligung gemäß § 6 Abs. 1 a) DSGVO verarbeitet.
+
+## Verwendung von Cookies
+
+Um Ihren Besuch auf unserer Website attraktiver zu gestalten und Ihnen die Nutzung bestimmter Funktionen der Website zu ermöglichen, setzen wir auf verschiedenen Seiten sogenannte Cookies ein. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden. Einige der von uns verwendeten Cookies werden am Ende Ihres Browsers gelöscht, dh nachdem Sie Ihren Browser geschlossen haben (sog. Sitzungs-Cookies). Andere Cookies verbleiben auf Ihrem Endgerät und ermöglichen es uns oder unseren Partnerunternehmen, Ihren Browser beim nächsten Besuch der Website wiederzuerkennen (dauerhafte Cookies).
+
+Sie können alle auf Ihrem Computer gespeicherten Cookies löschen und die meisten Browser können so konfiguriert werden, dass das Speichern von Cookies verhindert wird.
+
+----
+
+Address:
+
+Mainstraße 125
+41469 Neuss
+
+Germany
+
+----
+
+Email: sabine.isphording@web.de
+
+----
+
+Phone: +49 2137 92 76 72
+
+----
+
+Impressum:
+
+Gerichtsstand:
+Amtsgericht Neuss
+
+Steuernummer nach §27a des Deutschen Steuerrechts:
+DE 123 456 789 10
+
+Geschäftsführung:
+Georg Isphording
+
+Design & Art Direktion:
+Johannes Isphording - Studio Isphording
+
+Verwendete Schriftarten: Argesta - https://www.atipofoundry.com/fonts/argesta & Calendas Plus - https://www.atipofoundry.com/fonts/calendas-plus
+
+----

@@ -1,7 +1,72 @@
 /* Add in all template files */
-@use 'templates/default';
-@use 'templates/news';
-
 @use 'templates/colors';
 @use 'templates/webfonts';
 @use 'templates/typography';
+
+@use 'templates/default';
+@use 'templates/menu';
+@use 'templates/news';
+@use 'templates/footer';
+
+/* --------------------------------------------------------------------------- */
+/* BASIC STYLES BEYOND DEFAULTS
+/* --------------------------------------------------------------------------- */
+
+html {
+    color: var(--color-darkbrown);
+    background: var(--color-bg-white);
+}
+
+.content {
+    max-width: 100%;
+    width: 100%;
+    padding: 1rem;
+    padding-right: .5rem;
+}
+
+/* --------------------------------------------------------------------------- */
+/* MOOD IMAGES
+/* --------------------------------------------------------------------------- */
+.mood__image {
+    overflow: hidden;
+    height: 40vh;
+    position: relative;
+}
+
+.mood__image--inside {
+    position: absolute;
+    top: -10%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+.mood__image .titlecard {
+    width: auto;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+}
+
+.mood__image .titlecard .emblem {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.mood__image .titlecard h1 {
+    position: absolute;
+    width: auto;
+    bottom: 1rem;
+    left: .5rem;
+    right: .5rem;
+    line-height: 8vw;
+    font-size: 8vw;
+    letter-spacing: .05rem;
+    color: var(--color-white);
+    text-align-last: center;
+    font-family: var(--font-main-serif);
+    padding: 0;
+}

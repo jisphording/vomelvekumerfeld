@@ -1,15 +1,17 @@
 <!-- Fetching the header snippet -->
 <?php snippet('header') ?>
-
-<h1><?= $page->title() ?></h1>
+<!-- Fetching the standard mood image -->
+<?php snippet('intro-mood') ?>
 
 <!-- List all subpages on page - makes for easier backend management -->
 
 <!-- Main Page Loop -->
-<?= $page->content()->text()->blocks();
+<section class="content content__main">
+    <?= $page->content()->text()->blocks(); ?>
+</section>
 
-// Image Loop
-$images = $page->images();
+<!-- Image Loop -->
+<?php $images = $page->images();
 foreach ($images as $image):
     echo $image;
 endforeach; ?>
@@ -33,5 +35,7 @@ foreach ($subpages as $subpage): ?>
 
 endforeach;
 ?>
+<!-- END - List all subpages on page -->
 
-<!-- List all subpages on page -->
+<!-- Fetching the footer snippet -->
+<?php snippet('footer') ?>

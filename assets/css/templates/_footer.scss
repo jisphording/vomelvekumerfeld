@@ -1,0 +1,226 @@
+/* --------------------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------------------- */
+
+.footer {
+ color: var(--color-white);
+}
+
+.footer-top {
+    padding: 1rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.footer-top strong {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: .9rem;
+    color: var(--color-browngray);
+}
+
+.footer .menu a {
+    display: block;
+}
+
+.footer-navigation {
+    padding: 1rem;
+}
+  
+.footer-navigation__menu__main li:first-child {
+    font-family: var(--font-sans);
+    color: var(--color-browngray);
+    font-weight: 700;
+    font-size: .9rem;
+    margin-top: .5rem;
+    padding-bottom: .35rem;
+    margin-bottom: .45rem;
+    border-bottom: 2px solid var(--color-browngray);
+}
+
+.footer-bottom .copyright .trademark {
+    display: block;
+}
+
+.footer-bottom .emblem {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 5vh;
+    right: 40%;
+    padding: 0;
+}
+
+.footer-bottom .copyright {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    font-size: .6rem;
+}
+
+  
+
+/* IMPORTED FROM isphording-inneneinrichtung.de */
+
+.footer {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+  
+.footer a {
+    display: inline-block;
+    text-decoration: none;
+}
+  
+.footer > a {
+    margin-bottom: 1.5rem;
+    width: 16.5rem;
+    padding-top: .5rem;
+}
+  
+.footer-top p {
+    margin-bottom: 0;
+}
+  
+.footer-bottom li {
+    // color: var(--color-black);
+}
+
+.footer-bottom .date {
+    font-family: --font-main-serif;
+    font-weight: 700;
+}
+
+/* Footer Menus */ 
+.footer-navigation__menu__main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 480px) {
+    .footer-bottom .emblem {
+        width: 10%;
+    }
+
+    .footer-bottom .specialized {
+        width: 75%;
+        line-height: calc(1.5vw + 1rem);
+        margin-top: .75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer-navigation__menu__main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .footer-bottom .emblem {
+      width: 10%;
+    }
+
+    .footer-top p,
+    .footer-bottom .specialized {
+        width: 70%;
+    } 
+
+    .footer-navigation__menu__main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer .menu {
+        text-align: left;
+    }
+}
+  
+@media screen and (min-width: 1024px) {
+    .footer-navigation {
+        padding-left: 0; /* reset, because the menu grid will receive padding */
+    }
+
+    .footer-top,
+    .footer-navigation__menu__main {
+        padding-top: 3vw;
+        padding-bottom: 2vw;
+    }
+
+    .footer-top,
+    .footer-navigation__menu__main {
+        padding-left: 17.5%;
+    }
+
+    .footer-navigation__menu__main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .footer-bottom ul {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+
+    .footer-bottom .specialized {
+        margin-top: 0;
+    }
+
+    /* Reordering Grid Items */
+    .footer-bottom .specialized {
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .footer-bottom .emblem {
+        width: 50%;
+        margin: 0;
+        margin-left: 15%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .footer-bottom li {
+        column-span: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-top {
+        padding-top: 1.5rem;
+    }
+}
+  
+@media screen and (min-width: 1280px) {
+    .footer-bottom .emblem { 
+        width: 36%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-top p {
+        width: 35%;
+    }
+
+    .footer-bottom .specialized {
+        width: 85%;
+    }
+
+    .footer-top,
+    .footer-navigation__menu__main {
+        padding-right: 5.5%;
+    }
+}
+
+/* IMPORTED FROM isphording-inneneinrichtung.de */

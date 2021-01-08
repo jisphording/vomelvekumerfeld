@@ -22,9 +22,7 @@
   <div class="page <?= $page->uri() ?>">
     <header class="header">
 
-		<section id="navbar" class="navbar">
-            <h1 class="logo logotype">Vom Elvekumer Feld</h1>
-
+		<section id="navbar" class="navbar green-bg">
             <!-- include the main menu -->
             <?php snippet('menu') ?>
 

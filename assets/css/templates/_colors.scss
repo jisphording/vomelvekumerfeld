@@ -1,0 +1,20 @@
+/* Color Definitions */
+:root {
+    --color-white: #f2efe8;
+    --color-black: #0f0e0e; 
+    --color-gray: #6a6b6d; 
+    --color-browngray: #52504f;
+    --color-browngray-border: #312d2a;
+    --color-darkbrown: #301a11;
+    --color-vibrantgreen: #5f9f15;
+
+    --color-bg-white: #f2efe8;
+    --color-bg-black: #0f0e0e;
+    --color-bg-darkbrown: #221d19;
+    --color-bg-darkgray: #6a6b6d;
+    --color-bg-mutedgreen: #354532;
+}  
+
+.black-bg { background: var(--color-bg-black); }
+.green-bg { background: var(--color-bg-mutedgreen); }
+.brown-bg { background: var(--color-bg-darkbrown); }

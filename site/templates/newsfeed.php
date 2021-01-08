@@ -39,6 +39,7 @@
         </article>
 
     <?php endforeach ?>
+    <!-- END - Get all news items -->
 
     <!-- pagination -->
     <nav class="pagination">
@@ -53,4 +54,5 @@
 
 </section>
 
-<?php snippet('footer') ?>  
+<!-- Fetching the footer snippet -->
+<?php snippet('footer') ?> 

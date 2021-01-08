@@ -1,0 +1,32 @@
+@use 'typography';
+
+// MAIN MENU
+#navbar {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    color: var(--color-white);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#navbar li:nth-of-type(1) {
+    padding-top: 0;
+}
+
+#navbar li:last-of-type {
+    padding-bottom: 0;
+}

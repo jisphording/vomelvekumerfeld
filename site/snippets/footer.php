@@ -50,9 +50,9 @@
 
     <!-- START - Footer mood img -->
     <section class="footer-bottom">
-      <section class="mood__image">
+      <section class="mood__image--footer">
         <!-- start - mood img -->
-        <div class="mood__image--inside">
+        <div class="mood__image--inside--footer">
             <?php if($image = new Asset('/dist/img/footer-mood.webp')): // creating a new image object to make useof kirby obj functions ?>
                 <img srcset="<?= $image -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
                                             src="<?= $image -> url()?>" alt="Mood Image" style="height:<?= floor(($image -> height()) * 0.5) ?>; width:<?= floor(($image -> width()) * 0.5) ?>;" />

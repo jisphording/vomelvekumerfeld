@@ -29,44 +29,100 @@ html {
 /* --------------------------------------------------------------------------- */
 .mood__image {
     overflow: hidden;
-    height: 40vh;
+    height: 120vw;
     position: relative;
 }
 
 .mood__image--inside {
     position: absolute;
+    margin-top: 60vw;
     top: -10%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
 }
 
 .mood__image .titlecard {
-    width: auto;
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 1rem;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
 }
 
 .mood__image .titlecard .emblem {
     width: 30%;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .mood__image .titlecard h1 {
-    position: absolute;
-    width: auto;
-    bottom: 1rem;
-    left: .5rem;
-    right: .5rem;
     line-height: 8vw;
     font-size: 8vw;
     letter-spacing: .05rem;
     color: var(--color-white);
     text-align-last: center;
     font-family: var(--font-main-serif);
-    padding: 0;
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 480px) { 
+    .mood__image {
+        overflow: hidden;
+        height: 60vw;
+        position: relative;
+    }
+    
+    .mood__image--inside {
+        margin-top: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mood__image .titlecard {
+        position: absolute;
+        width: auto;
+        left: 2rem;
+        top: 2rem;
+        right: 2rem;
+        bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .mood__image .titlecard .emblem {
+        padding-top: 0;
+    }
+
+    .mood__image .titlecard h1 {
+        position: absolute;
+        width: auto;
+        bottom: 1rem;
+        left: .5rem;
+        right: .5rem;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .mood__image {
+        overflow: hidden;
+        height: 60vw;
+        position: relative;
+    }
+
+    .mood__image .titlecard {
+        left: 10vw;
+        top: 16vw;
+        right: 10vw;
+        bottom: 8vw;
+        padding: 1.25rem;
+    }
+
+    .mood__image .titlecard .emblem {
+        width: 24%; 
+    }
 }

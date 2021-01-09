@@ -66,7 +66,7 @@
 
         <!-- start - credits -->
         <div class="copyright">
-          <p>Crafted <a class="date" href="<?= url() ?>"> <?= date('Y') ?></a> by <a href="http://studioisphording.com/">Studio Isphording</a></p>
+          <p>Crafted <a class="date" href="<?= url() ?>"> <?= date('Y') ?></a> by <a class="developer" href="http://studioisphording.com/">Studio Isphording</a></p>
           <span>Alle Rechte Vorbehalten</span>
           <span class="trademark">&copy;</span>
         </div>

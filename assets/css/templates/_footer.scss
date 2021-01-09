@@ -61,7 +61,19 @@
     font-size: .6rem;
 }
 
-  
+.mood__image--footer {
+    overflow: hidden;
+    height: 60vw;
+    position: relative;
+}
+
+.mood__image--inside--footer {
+    position: absolute;
+    top: -10%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+}
 
 /* IMPORTED FROM isphording-inneneinrichtung.de */
 

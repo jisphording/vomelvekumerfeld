@@ -77,7 +77,7 @@ html {
     
     .mood__image--inside {
         margin-top: 0;
-        top: 0;
+        top: -10%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -124,5 +124,61 @@ html {
 
     .mood__image .titlecard .emblem {
         width: 24%; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mood__image .titlecard {
+        left: 15vw;
+        top: 20vw;
+        right: 15vw;
+    }
+
+    .mood__image .titlecard .emblem {
+        width: 22%; 
+    }
+
+    .mood__image .titlecard h1 {
+        line-height: 7vw;
+        font-size: 7vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mood__image .titlecard {
+        left: 20vw;
+        top: 25vw;
+        right: 20vw;
+    }
+
+    .mood__image .titlecard .emblem {
+        width: 22%; 
+    }
+
+    .mood__image .titlecard h1 {
+        line-height: 6vw;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mood__image {
+        height: 56vw;
+    }
+
+    .mood__image .titlecard {
+        left: 24vw;
+        top: 25vw;
+        right: 24vw;
+        bottom: 12vw;
+    }
+
+    .mood__image .titlecard .emblem {
+        width: 18%; 
+    }
+
+    .mood__image .titlecard h1 {
+        line-height: 5vw;
+        font-size: 5vw;
     }
 }

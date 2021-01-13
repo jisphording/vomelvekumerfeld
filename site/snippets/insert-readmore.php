@@ -44,11 +44,12 @@
                 <?php } // endif 
 
                 else { ?>
-                  <figure class="grid__item grid__item--image">
-
-                    <img class="grid__image" srcset="<?= $file_webp -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
-                                              src="<?= $file_webp -> url()?>" alt="<?= $project->title() ?>" loading="lazy" 
-                                              style="height:<?= floor(($file_webp -> height()) * 0.5) ?>; width:<?= floor(($file_webp -> width()) * 0.5) ?>;">
+                  <figure class="grid__item">
+                    <div class="grid__item--image">
+                      <img class="grid__image grid__item--image--inside" srcset="<?= $file_webp -> srcset([480, 768, 1024, 1280, 1440, 1680, 1920, 2560, 3840]) ?>"
+                                                src="<?= $file_webp -> url()?>" alt="<?= $project->title() ?>" loading="lazy" 
+                                                style="height:<?= floor(($file_webp -> height()) * 0.5) ?>; width:<?= floor(($file_webp -> width()) * 0.5) ?>;">
+                    </div>
 
                     <figcaption>
                       <span class="title"><h1><?= $project->title() ?></h1></span>

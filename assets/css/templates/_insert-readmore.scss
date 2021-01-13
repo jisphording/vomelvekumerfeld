@@ -5,6 +5,11 @@
     background-color: var(--color-bg-mutedgreen);
 }
 
+.insert--readmore figcaption {
+    z-index: 99;
+    position: relative;
+}
+
 .insert--readmore ul {
     width: 100%;
     overflow: auto;
@@ -66,7 +71,7 @@
     .insert--readmore .title h2,
     .insert--readmore .title h3 {
         font-size: 7.5vw;
-        margin-top: -2.8rem;
+        margin-top: -3.25rem;
         padding-right: 0.5rem;
     }
 
@@ -80,17 +85,18 @@
 
 @media screen and (min-width: 1024px) {
     .insert--readmore {
-        padding: 2.5rem 2rem;
-        padding-bottom: 1.5rem;
+        padding: 5rem 2rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .insert--readmore .title h1,
+    .insert--readmore .title h2,
+    .insert--readmore .title h3 {
+        margin-top: -3.75rem;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .insert--readmore {
-        padding: 3rem 2.5rem;
-        padding-bottom: 1rem;
-    }
-
     .insert--readmore li {
         padding: 1rem;
     }

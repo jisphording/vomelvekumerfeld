@@ -1,0 +1,97 @@
+// INSERT - READMORE
+
+.insert--readmore {
+    padding: 2rem;
+    background-color: var(--color-bg-mutedgreen);
+}
+
+.insert--readmore ul {
+    width: 100%;
+    overflow: auto;
+}
+
+.insert--readmore li {
+    margin-bottom: 1rem;
+}
+
+.insert--readmore li:last-of-type {
+    margin-bottom: 0;
+}
+
+.insert--readmore .title h1,
+.insert--readmore .title h2,
+.insert--readmore .title h3 {
+    color: var(--color-neongreen);
+    margin-top: -1.9rem;
+    padding-right: 1rem;
+    font-size: calc(12vw + 2rem);
+}
+
+.insert--readmore .link {
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: var(--font-sans);
+    text-align: center;
+    display: block;
+    font-size: .6rem;
+    padding-top: .5rem;
+}
+
+@media screen and (min-width: 480px) {
+    .insert--readmore {
+        padding: .5rem;
+    }
+
+    .insert--readmore li {
+        width: 50%;
+        float: left;
+        padding: .5rem;
+    }
+
+    .insert--readmore .title h1,
+    .insert--readmore .title h2,
+    .insert--readmore .title h3 {
+        font-size: calc(12vw + 1rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .insert--readmore li {
+        width: 25%;
+        padding-bottom: 0;
+    }
+
+    .insert--readmore .title h1,
+    .insert--readmore .title h2,
+    .insert--readmore .title h3 {
+        font-size: 7.5vw;
+        margin-top: -2.8rem;
+        padding-right: 0.5rem;
+    }
+
+    .insert--readmore .link {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: -1rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .insert--readmore {
+        padding: 2.5rem 2rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .insert--readmore {
+        padding: 3rem 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .insert--readmore li {
+        padding: 1rem;
+    }
+}

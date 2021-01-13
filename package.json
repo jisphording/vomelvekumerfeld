@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Online Presence of German Golden Retriever Kennel and Breeder 'Vom Elvekumer Feld'",
   "main": "index.php",
-  "dependencies": {},
   "pwaManifest": {
     "name": "Offline Website for Vom Elvekumer Feld",
     "shortName": "Vom Elvekumer Feld - Offline",

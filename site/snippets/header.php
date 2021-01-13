@@ -23,6 +23,7 @@
     <header class="header">
 
 		<section id="navbar" class="navbar green-bg">
+      <div id="mainmenu">
             <!-- include the main menu -->
             <?php snippet('menu') ?>
 
@@ -30,7 +31,11 @@
             <?php if ($page->slug() == 'hunde' || 'zucht') {
                 snippet('submenu'); 
             } ?> 
-
+      </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" id="burgermenu">
+      <span class="fa fa-bars">Men&uuml;</span>
+    </a>
 		</section>
 
     </header>

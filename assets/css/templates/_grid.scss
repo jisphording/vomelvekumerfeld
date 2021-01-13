@@ -1,0 +1,32 @@
+/* Basic Grid Definitions */
+.grid__item--image {
+    overflow: hidden;
+    height: 90vw;
+    position: relative;
+    z-index: 9;
+}
+
+.grid__item--image--inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+@media screen and (min-width: 480px) {
+    .grid__item--image {
+        height: 60vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid__item--image {
+        height: 30vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid__item--image {
+        height: 28vw;
+    }
+}

@@ -4,7 +4,7 @@
       <li>
         <div class="grid__container--images">
           <!-- Since at the moment kirby serves allfiletypes found we wrap everything in a PHP function that checks for the image type and then filters out everything that is not webp -->
-          <?php foreach( $project -> images() as $file ): ?>
+          <?php foreach( $project -> images()->limit(2) as $file ): ?>
               
               <?php $extension = $file->extension();
               $video_dir = "video/"; // where the video footage resides on the server
@@ -30,9 +30,11 @@
                   
                   <figure class="grid__item grid__item--image">
                     
-                    <video class="grid__image" playsinline autoplay muted loop>
-                        <source src="<?= $video_dir . $file_video ?>.webm" type="video/webm">
-                    </video>
+                    <div class="grid__item--image">
+                      <video class="grid__image grid__item--image--inside" playsinline autoplay muted loop>
+                          <source src="<?= $video_dir . $file_video ?>.webm" type="video/webm">
+                      </video>
+                    </div>
 
                     <figcaption>
                       <span class="title"><h1><?= $project->title() ?></h1></span>

@@ -11,8 +11,10 @@
 </section>
 
 <!-- Image Loop -->
-<?php $images = $page->images();
-foreach ($images as $image):
+<?php $images = $page->images()->filterBy('extension', 'webp');
+// filter images by filename containing a string to use for main site body
+$images_filtered = $images->filterBy('filename', '!*=', 'mood');
+foreach ($images_filtered as $image):
     echo $image;
 endforeach; ?>
 

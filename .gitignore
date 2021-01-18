@@ -38,6 +38,8 @@ ffmpeg2pass-0.log
 # Do not track plugins in repository
 # ---------------
 /site/plugins/*
+# except site methods
+!/site/plugins/site-methods
 
 # Do not track Content images
 # ---------------

@@ -10,31 +10,12 @@
     <?= $page->content()->text()->blocks(); ?>
 </section>
 
-<!-- Image Loop -->
-<?php $images = $page->images();
-foreach ($images as $image):
-    echo $image;
-endforeach; ?>
+<!-- Unshift Images Loop -->
+<?php $site->unshiftImage($page) ?>
 
 <!-- Sub Pages Loop -->
-<?php $subpages = $page->children();
+<?php $site->pullSubPages($page) ?>
 
-foreach ($subpages as $subpage): ?>
-
-    <hr /> <!-- temporary until css is in place -->
-
-    <h1><?= $subpage->content()->title() ?></h1>
-
-    <?= $subpage->content()->text()->blocks();
-
-    // Image Loop
-    $images = $subpage->images();
-    foreach ($images as $image):
-        echo $image;
-    endforeach;
-
-endforeach;
-?>
 <!-- END - List all subpages on page -->
 
 <!-- Fetching the footer snippet -->

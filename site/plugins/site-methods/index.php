@@ -23,11 +23,13 @@ Kirby::plugin('studio-isphording/site-methods', [
 			
 				<h1><?= $subpage->content()->title() ?></h1>
 			
-				<?= $subpage->content()->text()->blocks();
+				<?= $subpage->content()->text()->blocks(); ?>
 
-				// getting all the images from the page in a loop
-				$images = $subpage->images();
-				foreach ($images as $image):
+				<!-- Image Loop -->
+				<?= $images = $subpage->images()->filterBy('extension', 'webp');
+				// filter images by filename containing a string to use for main site body
+				$images_filtered = $images->filterBy('filename', '!*=', 'mood');
+				foreach ($images_filtered as $image):
 					echo $image;
 				endforeach;
 		

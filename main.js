@@ -2,4 +2,4 @@
 alert('Willkommen im Kennel!')
 
 // Code of main.js
-consoloe.log('Code of main.js goes below.')
+console.log('Code of main.js goes below.')

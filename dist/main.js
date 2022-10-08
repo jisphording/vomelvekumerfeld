@@ -1,0 +1,1 @@
+alert("Willkommen auf dem Elvekumer Feld!"),console.log("Code of main.js goes below.");

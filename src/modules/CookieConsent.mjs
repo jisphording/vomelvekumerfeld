@@ -26,12 +26,12 @@ function customCookieConsent() {
         autoclear_cookies: true, // default: false
         page_scripts: true, // default: false
 
-        // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+        mode: 'opt-in',                             // default: 'opt-in'; value: 'opt-in' or 'opt-out'
         // delay: 0,                               // default: 0
         // auto_language: '',                      // default: null; could also be 'browser' or 'document'
-        // autorun: true,                          // default: true
+        autorun: true,                             // default: true
         // force_consent: false,                   // default: false
-        // hide_from_bots: false,                  // default: false
+        hide_from_bots: false,                     // default: false
         // remove_cookie_tables: false             // default: false
         // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
         // cookie_expiration: 182,                 // default: 182 (days)
@@ -51,6 +51,12 @@ function customCookieConsent() {
 
         onAccept: function(cookie) {
             // callback triggered on the first accept/reject action, and after each page load
+            if (cc.allowedCategory('analytics')) { //
+                console.log('Trying to load analytics...')
+                cc.loadScript('https://jisphording.github.io/vomelvekumerfeld/dist/libs/analytics.js', function () {
+                    console.log('Script loaded...')
+                });
+            }
         },
 
         onChange: function(cookie, changed_categories) {
@@ -169,7 +175,7 @@ function customCookieConsent() {
                         title: 'Essenzielle Cookies',
                         description: 'Diese Cookies sind für die korrekte Funktion dieser Website unerlässlich. Sie können sie hier nicht deaktivieren, da der Dienst sonst nicht richtig funktionieren würde.',
                         toggle: {
-                            value: 'Essenziell',
+                            value: 'essential',
                             enabled: true,
                             readonly: true // cookie categories with readonly=true are all treated as "necessary cookies"
                         }
@@ -177,7 +183,7 @@ function customCookieConsent() {
                         title: 'Performance und Analytics',
                         description: 'Diese Cookies werden auf Ihrem Gerät gespeichert. Sie speichern Einstellungen aus Ihrem letzten Besuch und helfen uns dabei das Angebot auf unserer Website zukünftig zu verbessern.',
                         toggle: {
-                            value: 'Analytics', // your cookie category
+                            value: 'analytics', // your cookie category
                             enabled: false,
                             readonly: false
                         },
@@ -199,7 +205,7 @@ function customCookieConsent() {
                         title: 'Werbung und Tracking Cookies',
                         description: 'Diese Dienste verarbeiten persönliche Informationen, um Ihnen personalisierte oder interessenbezogene Werbung zu zeigen.',
                         toggle: {
-                            value: 'Tracking',
+                            value: 'tracking',
                             enabled: false,
                             readonly: false
                         }

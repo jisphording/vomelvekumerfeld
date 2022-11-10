@@ -1,1 +1,5 @@
-console.log('"analytics" category accepted');
+function initAnalytics() {
+    console.log('"analytics" category accepted');
+}
+
+initAnalytics();

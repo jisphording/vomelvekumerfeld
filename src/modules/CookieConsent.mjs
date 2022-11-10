@@ -205,7 +205,7 @@ function customCookieConsent() {
                         title: 'Werbung und Tracking Cookies',
                         description: 'Diese Dienste verarbeiten persönliche Informationen, um Ihnen personalisierte oder interessenbezogene Werbung zu zeigen.',
                         toggle: {
-                            value: 'tracking',
+                            value: 'ads',
                             enabled: false,
                             readonly: false
                         }

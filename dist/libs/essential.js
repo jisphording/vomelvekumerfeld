@@ -1,0 +1,1 @@
+console.log('"essential" category accepted');

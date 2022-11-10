@@ -1,6 +1,7 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
@@ -23,6 +24,18 @@ const config = {
         new HtmlWebpackPlugin({
             template: 'index.html',
         }),
+
+        new CopyWebpackPlugin({
+            patterns: [{
+              from: path.resolve(__dirname, '../src/libs'),
+              // to: path.resolve(projectRoot, 'dist'),
+              to: path.resolve(__dirname, '../dist/libs'),
+              // toType: 'dir',
+            }],
+            options: {
+              concurrency: 100,
+            },
+          }),
 
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/

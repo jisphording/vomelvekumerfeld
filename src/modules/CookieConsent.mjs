@@ -182,6 +182,7 @@ function customCookieConsent() {
                         cookie_table: [ // list of all expected cookies
                             {
                                 col1: 'Cookie Consent Manager',
+                                col2: '-',
                                 col3: '2 Jahre',
                                 col4: 'Speichert, welche Cookies akzeptiert wurden.'
                             }

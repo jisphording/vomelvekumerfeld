@@ -24,8 +24,7 @@ export default function stripScripts( s ) {
     head.remove()
 
     // remove google font stylesheet
-    stylesheets[1].remove(stylesheets[1])
-    console.log( stylesheets )
+    stylesheets[1].remove(stylesheets[1]) // ### TODO ### - Should be done with regex
 
     // strip all unneeded <script> tags
     let headTags = stripHtml( headContent, {

@@ -51,10 +51,15 @@ function customCookieConsent() {
 
         onAccept: function(cookie) {
             // callback triggered on the first accept/reject action, and after each page load
-            if (cc.allowedCategory('analytics')) { //
-                console.log('Trying to load analytics...')
+            if (cc.allowedCategory('analytics')) { 
+                console.log('Trying to load analytics...');
+
                 cc.loadScript('https://jisphording.github.io/vomelvekumerfeld/dist/libs/analytics.js', function () {
-                    console.log('Script loaded...')
+                    console.log('Analytics loaded...')
+                }),
+
+                cc.loadScript('https://jisphording.github.io/vomelvekumerfeld/dist/libs/googletagmanager.js', function () {
+                    console.log('Google Tag Manager loaded...')
                 });
             }
         },

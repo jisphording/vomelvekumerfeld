@@ -178,7 +178,14 @@ function customCookieConsent() {
                             value: 'essential',
                             enabled: true,
                             readonly: true // cookie categories with readonly=true are all treated as "necessary cookies"
-                        }
+                        },
+                        cookie_table: [ // list of all expected cookies
+                            {
+                                col1: 'Cookie Consent Manager',
+                                col3: '2 Jahre',
+                                col4: 'Speichert, welche Cookies akzeptiert wurden.'
+                            }
+                        ]
                     }, {
                         title: 'Performance und Analytics',
                         description: 'Diese Cookies werden auf Ihrem Gerät gespeichert. Sie speichern Einstellungen aus Ihrem letzten Besuch und helfen uns dabei das Angebot auf unserer Website zukünftig zu verbessern.',
@@ -189,16 +196,10 @@ function customCookieConsent() {
                         },
                         cookie_table: [ // list of all expected cookies
                             {
-                                col1: '^_ga', // match all cookies starting with "_ga"
+                                col1: 'Google Tag Manager',
                                 col2: 'google.com',
-                                col3: '2 years',
-                                col4: 'description ...',
-                                is_regex: true
-                            }, {
-                                col1: '_gid',
-                                col2: 'google.com',
-                                col3: '1 day',
-                                col4: 'description ...',
+                                col3: '2 Jahre',
+                                col4: 'Verfolgt besuche der Website, damit wir unser Angebot stetig verbessern können.'
                             }
                         ]
                     }, {
@@ -208,7 +209,15 @@ function customCookieConsent() {
                             value: 'ads',
                             enabled: false,
                             readonly: false
-                        }
+                        },
+                        cookie_table: [ // list of all expected cookies
+                            {
+                                col1: 'Google Tag Manager',
+                                col2: 'google.com',
+                                col3: '2 Jahre',
+                                col4: 'Verfolgt besuche der Website, damit wir unser Angebot stetig verbessern können.'
+                            }
+                        ]
                     }, {
                         title: 'Mehr Informationen',
                         description: 'Für Fragen zu unserer Website oder den Daten, die wir erheben <a class="cc-link" href="https://gunther-brau.webflow.io/kontakt">kontaktieren Sie uns</a>.',

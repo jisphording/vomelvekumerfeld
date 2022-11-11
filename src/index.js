@@ -4,9 +4,9 @@
 //
 // This is the main JavaScript file to enhance the Webflow Site.
 
-// Strip unused Webflow Scripts
-import stripScripts from './utils/stripscripts.mjs'
-
 // Import Cookie Consent
 import CookieConsent from './modules/CookieConsent.mjs'
 import AgeVerification from './modules/AgeVerification.mjs'
+
+// Import Animations
+import animJquery from './modules/animJquery.mjs'

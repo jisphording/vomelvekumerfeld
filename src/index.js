@@ -9,6 +9,4 @@ import stripScripts from './utils/stripscripts.mjs'
 
 // Import Cookie Consent
 import CookieConsent from './modules/CookieConsent.mjs'
-
-// Code of main.js
-console.log('Code of main.js goes below.')
+import AgeVerification from './modules/AgeVerification.mjs'

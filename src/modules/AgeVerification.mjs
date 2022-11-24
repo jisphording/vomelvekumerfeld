@@ -18,10 +18,17 @@ export default function AgeVerification() {
     const txt_denied = modalWrapper.getElementsByClassName( 'age-verification--denied' )[0]
     const btn_yes = document.getElementsByClassName( 'age-verify--yes' )[0]
     const btn_no = document.getElementsByClassName( 'age-verify--no' )[0]
+
+    // CHECK IF MODAL IS VISIBLE
+    // ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- //
+    // If modal is accidentally mleft invisible in Webflow we make it visible with this code
+    if ( modalWrapper.style.display != 'block;' ) {
+        modalWrapper.style.display = 'block';
+    }
     
     // GET COOKIE
     // ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- //
-    // ### TODO ### - The Cookie is retrieved, but the check should be refactored to allow
+    // ### TODO ### The Cookie is retrieved, but the check should be refactored to allow
     // for checking of substring values from the cookie.
     function getCookie( cname ) {
         let name = cname + "=";
@@ -51,6 +58,7 @@ export default function AgeVerification() {
                 return;
             }
             else {
+                return cookiesAllowed;
             }
         }
         catch (err) {
@@ -58,11 +66,20 @@ export default function AgeVerification() {
     }    
     ageCheckCookie( 'age' )
 
-    // ACTION ON CLICK -- YES
+    // ACTION ON CLICK -- YES   
     // ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- //
     btn_yes.addEventListener( 'click', function( e ) {
         removeModal()
-        ageSetCookie( 'age', 'verified', 365 )
+
+        // Get current cookie settings
+        let cookieSettings = ageCheckCookie( 'age' );
+
+        // Check if Cookie setting is allowed and then set the age cookie accordingly
+        // ### TODO ### Update the check when final cookie tool decision is made!
+        if ( cookieSettings.includes( 'analytics' ) ) {
+            ageSetCookie( 'age', 'verified', 365 )
+        }
+        
     }, false )
 
     // ACTION ON CLICK -- NO
@@ -76,6 +93,18 @@ export default function AgeVerification() {
     // ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- //
     function removeModal() {
         modalWrapper.remove( modalWrapper )
+
+        // Mae Page scrolable again 
+        // ### TODO ### This should be wrapped into a loop...
+        let tagHtml = document.getElementsByTagName( 'html' )[0];
+        let tagBody = document.getElementsByTagName( 'body' )[0];
+
+        tagHtml.style.height = 'auto';
+        tagHtml.style.overflow = 'scroll';
+
+        tagBody.style.height = 'auto';
+        tagBody.style.overflow = 'scroll';
+        
     }
 }
 

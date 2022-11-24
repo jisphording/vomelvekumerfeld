@@ -4,7 +4,7 @@
 //
 // Dieses Script implementiert Animationen mit GSAP
 //
-// ### TODO: (1) Add check if user agent already has cached GSAP
+// ### TODO ### Add check if user agent already has cached GSAP
 // Add GSAP to enable Animations on the site
 
 import loadAsync from "../utils/loadasync.mjs";
